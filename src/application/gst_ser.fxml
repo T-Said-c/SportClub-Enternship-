@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.gst_ser_scene">
+   <children>
+      <Label alignment="CENTER" layoutX="-4.0" layoutY="-5.0" prefHeight="38.0" prefWidth="749.0" style="-fx-background-color: red;" text="Gestion des Services">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="153.0" prefHeight="18.0" prefWidth="98.0" text="Paiment:" />
+      <Label layoutX="41.0" layoutY="80.0" prefHeight="18.0" prefWidth="106.0" text="Code Service:" />
+      <TextField fx:id="txtpai" disable="true" layoutX="147.0" layoutY="149.0" />
+      <TextField fx:id="txtser" disable="true" layoutX="147.0" layoutY="76.0" />
+      <TableView fx:id="tvser" layoutY="352.0" prefHeight="318.0" prefWidth="743.0">
+         <columns>
+            <TableColumn fx:id="clmser" prefWidth="154.3999908566475" text="Code Service" />
+            <TableColumn fx:id="clmdet" prefWidth="441.5999755859375" text="Detail" />
+            <TableColumn fx:id="clmpai" prefWidth="146.40003967285156" text="Paiment" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnnv" layoutX="69.0" layoutY="252.0" mnemonicParsing="false" onAction="#btnnvclick" prefHeight="26.0" prefWidth="125.0" text="Nouveau" />
+      <Button fx:id="btnmod" layoutX="309.0" layoutY="252.0" mnemonicParsing="false" onAction="#btnmodclick" prefHeight="26.0" prefWidth="125.0" text="Modifier" />
+      <Button fx:id="btnsup" layoutX="555.0" layoutY="252.0" mnemonicParsing="false" onAction="#btnsupclick" prefHeight="26.0" prefWidth="125.0" text="Supprimer" />
+      <Label layoutX="372.0" layoutY="123.0" prefHeight="18.0" prefWidth="52.0" text="Detail:" />
+      <TextArea fx:id="txtdet" disable="true" layoutX="451.0" layoutY="76.0" prefHeight="112.0" prefWidth="267.0" />
+   </children>
+</AnchorPane>

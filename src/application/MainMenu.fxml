@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="909.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainMenu_scene">
+   <children>
+      <AnchorPane prefHeight="670.0" prefWidth="167.0" style="-fx-background-color: red;">
+         <children>
+            <Button layoutY="32.0" mnemonicParsing="false" onAction="#gst_adhclick" prefHeight="26.0" prefWidth="167.0" text="Gestion des Adherents" />
+            <Button layoutY="69.0" mnemonicParsing="false" onAction="#gst_aboclick" prefHeight="26.0" prefWidth="167.0" text="Gestion des Abonnements" />
+            <Button layoutY="108.0" mnemonicParsing="false" onAction="#gst_recclick" prefHeight="26.0" prefWidth="167.0" text="Gestion des Recettes" />
+            <Button fx:id="btnser" layoutY="225.0" mnemonicParsing="false" onAction="#gst_serclick" prefHeight="26.0" prefWidth="167.0" text="Gestion des Services" />
+            <Button fx:id="btndep" layoutY="186.0" mnemonicParsing="false" onAction="#gst_depclick" prefHeight="26.0" prefWidth="167.0" text="Gestion des Depences" />
+            <Button fx:id="btnper" layoutY="263.0" mnemonicParsing="false" onAction="#gst_perclick" prefHeight="26.0" prefWidth="167.0" text="Gestion des Personnels" />
+            <Button fx:id="btnpv" layoutY="301.0" mnemonicParsing="false" onAction="#pnt_vteclick" prefHeight="26.0" prefWidth="167.0" text="Points de vente" />
+            <Button fx:id="logoutbtn" layoutY="611.0" mnemonicParsing="false" onAction="#logoutclick" prefHeight="26.0" prefWidth="167.0" text="Log-Out" />
+            <Button fx:id="btnuti" layoutY="341.0" mnemonicParsing="false" onAction="#gst_uticlick" prefHeight="26.0" prefWidth="167.0" text="Gestion des Utilisateurs" />
+            <Button fx:id="btnsta" layoutY="380.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="167.0" text="Statistiques" />
+            <Label layoutX="10.0" layoutY="507.0" prefHeight="26.0" prefWidth="130.0" text="Permission Level:" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbpl" layoutX="143.0" layoutY="507.0" prefHeight="26.0" prefWidth="14.0" textFill="WHITE">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button layoutY="148.0" mnemonicParsing="false" onAction="#gst_resclick" prefHeight="26.0" prefWidth="167.0" text="Gestion des Reservations" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="changedanch" layoutX="167.0" prefHeight="670.0" prefWidth="743.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="216.0" fitWidth="288.0" layoutX="264.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sportclubfull.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="52.0" fitWidth="339.0" layoutX="225.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@goldenclub.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
